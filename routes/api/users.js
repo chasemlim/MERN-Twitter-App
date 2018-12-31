@@ -83,7 +83,24 @@ router.post('/login', (req, res) => {
                             }
                         )
                     } else {
-                        return res.status(400).json({ password: "Password incorrect" });
+                        return res.status(400).json({ password: "Password incorrect lol" });
+                        // const payload = {
+                        //     id: user.id,
+                        //     handle: user.handle,
+                        //     email: user.email
+                        // }
+                        // jwt.sign(
+                        //     payload,
+                        //     keys.secretOrKey, {
+                        //         expiresIn: 3600
+                        //     },
+                        //     (err, token) => {
+                        //         res.json({
+                        //             success: true,
+                        //             token: "Bearer " + token
+                        //         })
+                        //     }
+                        // )
                     }
                 })
         })
